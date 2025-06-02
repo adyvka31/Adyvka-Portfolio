@@ -1,0 +1,418 @@
+@font-face 
+{
+  font-family: 'BebasNeue';
+  src: url('../Font/BebasNeue-Regular.ttf');
+}
+
+@font-face 
+{
+  font-family: 'Poppins';
+  src: url('../Font/Poppins-Regular.ttf');
+}
+
+.animate-marquee {
+  animation: marquee 60s linear infinite;
+}
+
+.animate-marquee-right {
+  animation: marquee-right 60s linear infinite;
+}
+
+.animate-marquee:hover,
+.animate-marquee-right:hover {
+  animation-play-state: paused;
+}
+
+.circle {
+  height: 15px;
+  width: 15px;
+  border-radius: 24px;
+  background-color: black;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999999; /* so that it stays on top of all other elements */
+}
+
+.circle-bg {
+  width: 250px;
+  height: 250px;
+  background-color: #334B35;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+#btnLinkedin:hover .circle-bg {
+  width: 640px;
+  height: 640px;
+}
+
+#btnWork:hover .circle-bg {
+  width: 280px;
+  height: 280px;
+}
+
+#btnAbout:hover .circle-bg {
+  width: 300px;
+  height: 300px;
+}
+
+#btnProjects:hover,
+#btnWork:hover,
+#btnAbout:hover,
+#btnLinkedin:hover p,
+#btnLinkedin:hover svg  {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+#pembungkus-javaisland,
+#pembungkus-coffeee,
+#pembungkus-pusakaku,
+#pembungkus-fitsmart,
+#pembungkus-payroll,
+#pembungkus-semuabisa  {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+#pembungkus-javaisland::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent 50%, #0f7e66b1);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+#pembungkus-coffeee::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent 50%, #78360fb1);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+#pembungkus-pusakaku::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent 50%, #5D8736b1);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+#pembungkus-fitsmart::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent 50%, #207786b1);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+#pembungkus-payroll::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent 50%, #7483d9);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+#pembungkus-semuabisa::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent 50%, #2F3087b1);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+#pembungkus-javaisland:hover::before,
+#pembungkus-coffeee:hover::before,
+#pembungkus-pusakaku:hover::before,
+#pembungkus-fitsmart:hover::before,
+#pembungkus-payroll:hover::before,
+#pembungkus-semuabisa:hover::before{
+  opacity: 1;
+}
+
+#pembungkus-javaisland p,
+#pembungkus-coffeee p,
+#pembungkus-pusakaku p,
+#pembungkus-fitsmart p,
+#pembungkus-payroll p,
+#pembungkus-semuabisa p {
+  width: 100%;
+  font-weight: 600;
+  color: #fff;
+  font-size: 22px;
+  bottom: 0;
+  text-align: center;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#pembungkus-javaisland:hover p,
+#pembungkus-coffeee:hover p,
+#pembungkus-pusakaku:hover p,
+#pembungkus-fitsmart:hover p,
+#pembungkus-payroll:hover p,
+#pembungkus-semuabisa:hover p {
+  bottom: 20%;
+  opacity: 1;
+}
+
+.hidden-before-animate {
+  opacity: 0;
+}
+
+.fadeinup{
+  animation: fadeInUp 1.4s ease-in-out forwards;
+}
+
+.fadeinleft{
+  animation: fadeInLeft 0.7s ease-in-out forwards;
+}
+
+.fadeinleft-rafif{
+  animation: fadeInLeft 0.7s ease-in-out forwards;
+  animation-delay: 0.1s;
+}
+.fadeinleft-sava{
+  animation: fadeInLeft 0.7s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+.fadeinleft-adyvka{
+  animation: fadeInLeft 0.7s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+.fadeinleftup{
+  animation: fadeInLeftUp 0.7s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+.fadeinright{
+  animation: fadeInRight 0.7s ease-in-out forwards;
+}
+
+.fadeinright-project{
+  animation: fadeInRight 0.7s ease-in-out forwards;
+}
+.fadeinright-experience{
+  animation: fadeInRight 0.7s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+.fadeinright-achievement{
+  animation: fadeInRight 0.7s ease-in-out forwards;
+  animation-delay: 0.4s;
+}
+.fadeinright-contact{
+  animation: fadeInRight 0.7s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+
+.fadeindown{
+  animation: fadeInDown 1.4s ease-in-out forwards;
+}
+
+.scroll-fadeinup{
+  animation: fadeInUp 1s linear forwards;
+  transition: 0.3s ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+.scroll-fadeindown{
+  animation: fadeInDown 1s linear forwards;
+  transition: 0.3s ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+
+.scroll-fadeinright{
+  animation: fadeInRight 1s linear forwards;
+  transition: 0.3s ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+
+.scroll-fadeinleft{
+  animation: fadeInLeft 1s linear forwards;
+  transition: 0.3s ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+
+/*  */
+
+.scroll-fadeinright-profile{
+  animation: fadeInRight 1s linear forwards;
+  transition: 0.3s ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 10% cover 30%;
+}
+.scroll-fadeinright-lahir{
+  animation: fadeInRight 1s linear forwards;
+  transition: 0.3s ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 10% cover 20%;
+}
+.scroll-fadeinright-project{
+  animation: fadeInRight 1s linear forwards;
+  transition: 0.3s ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 20% cover 30%;
+}
+.scroll-fadeinleft-project{
+  animation: fadeInLeft 1s linear forwards;
+  transition: 0.3s ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 20% cover 30%;
+}
+.scroll-fadeinleft-tahun{
+  animation: fadeInLeft 1s linear forwards;
+  transition: 0.3s ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 15% cover 25%;
+}
+.scroll-fadeinleft-linkedin{
+  animation: fadeInLeft 1s linear forwards;
+  transition: 0.3s ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0% cover 10%;
+}
+.scroll-fadeinright-banner{
+  animation: fadeInRight-banner 1s linear forwards;
+  transition: 0.3s ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-40%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(70px);
+        visibility: visible;
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+    }
+  }
+
+  @keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-70px);
+        visibility: visible;
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        visibility: visible;
+    }
+  }
+
+  @keyframes fadeInLeftUp {
+  0% {
+    opacity: 0;
+    transform: translate(-70px, 70px);
+    visibility: visible;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+    visibility: visible;
+  }
+}
+
+  @keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(70px);
+        visibility: visible;
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        visibility: visible;
+    }
+  }
+
+    @keyframes fadeInRight-banner {
+    0% {
+        opacity: 1;
+        transform: translateX(-70px);
+        visibility: visible;
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        visibility: visible;
+    }
+  }
+
+    @keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-70px);
+        visibility: visible;
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+    }
+  }
