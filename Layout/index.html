@@ -8,42 +8,125 @@
     <link rel="stylesheet" href="../Style/index.css" />
     <link
       rel="stylesheet"
+      href="https://unpkg.com/@osmo-supply/ui/dist/osmo.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
   <body class="bg-[#F6EEE1] overflow-x-hidden border-12 border-[#334B35]">
+    <div class="noise"></div>
+    <!-- Tombol Toggle
+    <button
+      id="menu-toggle"
+      class="absolute top-6 right-6 z-50 p-2 bg-white rounded-md shadow-md"
+    >
+      <svg
+        id="icon-hamburger"
+        class="w-6 h-6 text-black"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M4 6h16M4 12h16M4 18h16"
+        />
+      </svg>
+      <svg
+        id="icon-close"
+        class="w-6 h-6 text-black hidden"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
+    </button>
+
+    <div
+      id="mobile-nav"
+      class="absolute top-0 right-0 w-full max-w-sm h-fullz-40 transform translate-x-full transition-transform duration-500 ease-in-out"
+    >
+      <nav class="mt-6 -mr-55">
+        <ul class="flex gap-x-4 justify-end">
+          <li>
+            <a
+              class="inline-block border-1 border-[#334B35] hover:bg-[#FEAC1B] duration-200 px-6 py-1 rounded-full font-['Poppins'] text-md cursor-pointer"
+              href=""
+              >PROJECT</a
+            >
+          </li>
+          <li>
+            <a
+              class="inline-block border-1 border-[#334B35] hover:bg-[#FEAC1B] duration-200 px-6 py-1 rounded-full font-['Poppins'] text-md cursor-pointer"
+              href=""
+              >EXPERIENCE</a
+            >
+          </li>
+          <li>
+            <a
+              class="inline-block border-1 border-[#334B35] hover:bg-[#FEAC1B] duration-200 px-6 py-1 rounded-full font-['Poppins'] text-md cursor-pointer"
+              href=""
+              >ACHIEVEMENT</a
+            >
+          </li>
+          <li>
+            <a
+              class="inline-block border-1 border-[#334B35] hover:bg-[#FEAC1B] duration-200 px-6 py-1 rounded-full font-['Poppins'] text-md cursor-pointer"
+              href=""
+              >CONTACT</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div> -->
     <nav class="mt-6 -mr-4">
       <ul class="flex gap-x-4 justify-end">
         <li>
           <a
-            class="hidden-before-animate fadeinright-project inline-block border-1 border-[#334B35] hover:bg-[#FEAC1B] duration-200 px-6 py-1 rounded-full font-['Poppins'] text-md cursor-pointer"
+            class="hidden-before-animate-1 fadeinright-project inline-block border-1 border-[#334B35] hover:bg-[#FEAC1B] duration-200 px-6 py-1 rounded-full font-['Poppins'] text-md cursor-pointer"
             href=""
             >PROJECT</a
           >
         </li>
         <li>
           <a
-            class="hidden-before-animate fadeinright-experience inline-block border-1 border-[#334B35] hover:bg-[#FEAC1B] duration-200 px-6 py-1 rounded-full font-['Poppins'] text-md cursor-pointer"
+            class="hidden-before-animate-1 fadeinright-experience inline-block border-1 border-[#334B35] hover:bg-[#FEAC1B] duration-200 px-6 py-1 rounded-full font-['Poppins'] text-md cursor-pointer"
             href=""
             >EXPERIENCE</a
           >
         </li>
         <li>
           <a
-            class="hidden-before-animate fadeinright-achievement inline-block border-1 border-[#334B35] hover:bg-[#FEAC1B] duration-200 px-6 py-1 rounded-full font-['Poppins'] text-md cursor-pointer"
+            class="hidden-before-animate-1 fadeinright-achievement inline-block border-1 border-[#334B35] hover:bg-[#FEAC1B] duration-200 px-6 py-1 rounded-full font-['Poppins'] text-md cursor-pointer"
             href=""
             >ACHIEVEMENT</a
           >
         </li>
         <li>
           <a
-            class="hidden-before-animate fadeinright-contact inline-block border-1 border-[#334B35] hover:bg-[#FEAC1B] duration-200 px-6 py-1 rounded-full font-['Poppins'] text-md cursor-pointer"
+            class="hidden-before-animate-1 fadeinright-contact inline-block border-1 border-[#334B35] hover:bg-[#FEAC1B] duration-200 px-6 py-1 rounded-full font-['Poppins'] text-md cursor-pointer"
             href=""
             >CONTACT</a
           >
         </li>
       </ul>
     </nav>
+
+    <!-- HERO -->
+    <!-- HERO -->
+    <!-- HERO -->
+    <!-- HERO -->
+
     <section class="w-screen h-screen flex">
       <div class="absolute -z-15 w-full overflow-hidden top-[-115px]">
         <div class="flex w-max animate-marquee">
@@ -98,7 +181,7 @@
       <div class="w-45%">
         <img
           src="../Image/erasebg-transformed (1).png"
-          class="w-8/9 -z-9 ml-18 hidden-before-animate fadeinleftup"
+          class="w-8/9 -z-9 ml-18 hidden-before-animate-1 fadeinleftup"
         />
       </div>
       <div class="w-55% items-center justify-center">
@@ -107,22 +190,27 @@
           class="text-[190px] z-10 text-[#334B35] font-['BebasNeue'] font-medium leading-38 text-pretty mr-55 mt-40"
         >
           <span
-            class="hover:text-[#F6EEE1] hidden-before-animate fadeinleft-rafif inline-block duration-200"
+            class="hover:text-[#F6EEE1] hidden-before-animate-1 fadeinleft-rafif inline-block duration-200"
             >RAFIF</span
           >
           <br />
           <span
-            class="ml-16 hover:text-[#F6EEE1] hidden-before-animate fadeinleft-sava inline-block duration-200"
+            class="ml-16 hover:text-[#F6EEE1] hidden-before-animate-1 fadeinleft-sava inline-block duration-200"
             >SAVA</span
           >
           <br />
           <span
-            class="ml-32 hover:text-[#F6EEE1] hidden-before-animate fadeinleft-adyvka inline-block duration-200"
+            class="ml-32 hover:text-[#F6EEE1] hidden-before-animate-1 fadeinleft-adyvka inline-block duration-200"
             >ADYVKA</span
           >
         </h1>
       </div>
     </section>
+
+    <!-- BANNER -->
+    <!-- BANNER -->
+    <!-- BANNER -->
+    <!-- BANNER -->
 
     <div class="w-full bg-[#334B35] -mt-6 flex px-24 py-10 justify-between">
       <div>
@@ -166,23 +254,24 @@
       </div>
     </div>
 
+    <!-- ABOUT -->
+    <!-- ABOUT -->
+    <!-- ABOUT -->
+    <!-- ABOUT -->
+
     <div class="py-38 px-24 flex justify-between">
       <div>
-        <a data-draw-line href="#" class="text-draw w-inline-block">
+        <a href="#" class="text-draw w-inline-block">
           <h1
             class="text-draw__p font-['BebasNeue'] text-[100px] leading-28 mb-4 scroll-fadeinleft"
           >
             HEY THERE, <br />
             I'M ADYVKA
           </h1>
-          <div
-            class="absolute left-54 top-[1430px]"
-            data-draw-line-box
-            class="text-draw__box"
-          >
+          <div class="text-draw__box" data-draw-line-box>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="80%"
+              width="100%"
               viewBox="0 0 310 41"
               fill="none"
               preserveAspectRatio="none"
@@ -197,6 +286,7 @@
             </svg>
           </div>
         </a>
+
         <p
           class="text-justify text-sm leading-6 font-['Poppins'] w-88 scroll-fadeinleft"
         >
@@ -253,8 +343,8 @@
             class="w-40 h-40 absolute bottom-58 right-40 rounded-full bg-[#F6EEE1]"
           ></div>
           <img
-            src="../Image/erasebg-transformed 3.png"
-            class="absolute w-86 mb-32"
+            src="../Image/erasebg-transformed (2).png"
+            class="absolute w-83 mb-32 ml-4"
           />
           <div class="w-full h-32 bg-black space-y-1">
             <div class="flex items-center space-x-2">
@@ -307,6 +397,11 @@
       </div>
     </div>
 
+    <!-- BANNER -->
+    <!-- BANNER -->
+    <!-- BANNER -->
+    <!-- BANNER -->
+
     <div class="w-full h-24 bg-[#FEAC1B] -mt-26 absolute -z-15">
       <div
         class="w-max h-24 -ml-10 bg-[#334B35] overflow-hidden -rotate-1 -z-15 flex scroll-fadeinright-banner"
@@ -356,6 +451,11 @@
         </h1>
       </div>
     </div>
+
+    <!-- PROJECT -->
+    <!-- PROJECT -->
+    <!-- PROJECT -->
+    <!-- PROJECT -->
 
     <div class="py-44 px-24">
       <div class="absolute -z-15 w-full overflow-hidden top-[1850px] right-0">
@@ -706,46 +806,13 @@
       </button>
     </div>
 
-    <div class="bg-[#334B35] w-full rounded-2xl px-24 py-20">
-      <button
-        id="scrollLeft"
-        class="absolute top-[4000px] left-22 z-10 w-9 h-9 cursor-pointer mt-1 rounded-full bg-[#F6EEE1] flex items-center justify-center hidden-before-animate scroll-fadeinleft"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="w-5 h-5 text-[#334B35] rotate-180"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          stroke-width="3"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M9 5l7 7-7 7"
-          />
-        </svg>
-      </button>
-      <button
-        id="scrollRight"
-        class="absolute top-[4000px] right-22 z-10 w-9 h-9 cursor-pointer mt-1 rounded-full bg-[#F6EEE1] flex items-center justify-center hidden-before-animate scroll-fadeinright"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="w-5 h-5 text-[#334B35]"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          stroke-width="3"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M9 5l7 7-7 7"
-          />
-        </svg>
-      </button>
-      <div class="flex justify-between">
+    <!-- EXPERIENCE -->
+    <!-- EXPERIENCE -->
+    <!-- EXPERIENCE -->
+    <!-- EXPERIENCE -->
+
+    <div class="bg-[#334B35] w-full rounded-2xl py-20">
+      <div class="flex justify-between px-24">
         <h1
           class="font-['BebasNeue'] text-[100px] leading-28 text-left text-[#F6EEE1] scroll-fadeinleft"
         >
@@ -758,126 +825,125 @@
           ditempatkan untuk mendemostrasikan elemen grafis atau presentasi. 
         </p>
       </div>
-      <div class="bg-[#F6EEE180] w-full h-[1px] mt-7 mb-22"></div>
-      <div class="blogContainer swiper">
-        <div class="blogWrapper">
-          <div
-            class="blogList swiper-wrapper flex gap-x-4 overflow-x-auto whitespace-nowrap scroll-smooth scrollbar-hide"
+      <div class="bg-[#F6EEE180] w-6/7 mx-auto h-[1px] mt-7 mb-22"></div>
+      <div class="flex justify-between">
+        <button
+          class="button-prev absolute top-[3990px] left-24 z-20 w-10 h-10 mt-1 rounded-full bg-[#F6EEE1] flex items-center justify-center hover:shadow-xl cursor-pointer duration-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6 text-[#334B35] rotate-180"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="3"
           >
-            <div
-              class="swiper-slide relative w-[410px] h-[440px] rounded-xl overflow-hidden hidden-before-animate scroll-fadeinleft-project"
-            >
-              <img
-                src="/Image/IDN-Mengajar.jpg"
-                alt="IDN Teaching"
-                class="w-full h-full object-cover"
-              />
-
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"
-              ></div>
-
-              <div class="absolute bottom-0 px-14 py-10">
-                <h2 class="font-['Poppins'] text-[16px] text-white">
-                  IDN Teaching
-                </h2>
-                <p class="font-['Poppins'] text-sm text-gray-300">
-                  Majalengka, Jawa Barat
-                </p>
-              </div>
-            </div>
-            <div
-              class="swiper-slide relative w-[410px] h-[440px] rounded-xl overflow-hidden hidden-before-animate scroll-fadeinup"
-            >
-              <img
-                src="/Image/Workshop.jpeg"
-                alt="Workshop"
-                class="w-full h-full object-cover"
-              />
-
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"
-              ></div>
-
-              <div class="absolute bottom-0 px-14 py-10">
-                <h2 class="font-['Poppins'] text-[16px] text-white">
-                  Workshop
-                </h2>
-                <p class="font-['Poppins'] text-sm text-gray-300">
-                  Google Developer Group
-                </p>
-              </div>
-            </div>
-            <div
-              class="swiper-slide relative w-[410px] h-[440px] rounded-xl overflow-hidden hidden-before-animate scroll-fadeinright-project"
-            >
-              <img
-                src="/Image/IDN-Backpacker.png"
-                alt="IDN Backpacker"
-                class="w-full h-full object-cover"
-              />
-
-              <div></div>
-
-              <div class="absolute bottom-0 px-14 py-10">
-                <h2 class="font-['Poppins'] text-[16px] text-white">
-                  IDN Backpacker
-                </h2>
-                <p class="font-['Poppins'] text-sm text-gray-300">
-                  Singapore, Malaysia, Thailand
-                </p>
-              </div>
-            </div>
-            <div
-              class="swiper-slide relative w-[410px] h-[440px] rounded-xl overflow-hidden hidden-before-animate scroll-fadeinleft-project"
-            >
-              <img
-                src="/Image/IDN-Mengajar.jpg"
-                alt="IDN Teaching"
-                class="w-full h-full object-cover"
-              />
-
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"
-              ></div>
-
-              <div class="absolute bottom-0 px-14 py-10">
-                <h2 class="font-['Poppins'] text-[16px] text-white">
-                  IDN Teaching
-                </h2>
-                <p class="font-['Poppins'] text-sm text-gray-300">
-                  Majalengka, Jawa Barat
-                </p>
-              </div>
-            </div>
-            <div
-              class="swiper-slide relative w-[410px] h-[440px] rounded-xl overflow-hidden hidden-before-animate scroll-fadeinup"
-            >
-              <img
-                src="/Image/Workshop.jpeg"
-                alt="Workshop"
-                class="w-full h-full object-cover"
-              />
-
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"
-              ></div>
-
-              <div class="absolute bottom-0 px-14 py-10">
-                <h2 class="font-['Poppins'] text-[16px] text-white">
-                  Workshop
-                </h2>
-                <p class="font-['Poppins'] text-sm text-gray-300">
-                  Google Developer Group
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </button>
+        <button
+          class="button-next absolute top-[3990px] right-24 z-20 w-10 h-10 mt-1 rounded-full bg-[#F6EEE1] flex items-center justify-center hover:shadow-xl cursor-pointer duration-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6 text-[#334B35]"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="3"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="swiper max-w-[1330px] scroll-fadeinup">
+        <div class="card-wrapper">
+          <ul class="card-list swiper-wrapper gap-x-0.5 z-0">
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img
+                  src="../Image/IDN-Mengajar.jpg"
+                  alt=""
+                  class="card-image"
+                />
+                <div class="card-overlay">
+                  <h2 class="font-['Poppins'] text-[16px]">IDN Teaching</h2>
+                  <p class="font-['Poppins'] text-[14px] text-gray-300">
+                    Basic of Programmer & Designer
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img src="../Image/Workshop.jpeg" alt="" class="card-image" />
+                <div class="card-overlay">
+                  <h2 class="font-['Poppins'] text-[16px]">Workshop</h2>
+                  <p class="font-['Poppins'] text-[14px] text-gray-300">
+                    Google Developer Group
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img
+                  src="../Image/IDN-Backpacker.png"
+                  alt=""
+                  class="card-image"
+                />
+                <div class="card-overlay-backpacker">
+                  <h2 class="font-['Poppins'] text-[16px]">IDN Backpacker</h2>
+                  <p class="font-['Poppins'] text-[14px] text-gray-300">
+                    Singapore, Malaysia, Thailand
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img src="../Image/Visitasion.jpeg" alt="" class="card-image" />
+                <div class="card-overlay">
+                  <h2 class="font-['Poppins'] text-[16px]">Visitasion</h2>
+                  <p class="font-['Poppins'] text-[14px] text-gray-300">
+                    Indonesia The Natural School
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img
+                  src="../Image/Competition.png"
+                  alt=""
+                  class="card-image object-left"
+                />
+                <div class="card-overlay">
+                  <h2 class="font-['Poppins'] text-[16px]">Competition</h2>
+                  <p class="font-['Poppins'] text-[14px] text-gray-300">
+                    Web Design
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </div>
+
+    <!-- EDUCATION & WORK -->
+    <!-- EDUCATION & WORK -->
+    <!-- EDUCATION & WORK -->
+    <!-- EDUCATION & WORK -->
 
     <div class="py-44 px-24">
       <div class="absolute w-full -z-15 overflow-hidden top-[4350px] right-0">
@@ -1043,7 +1109,482 @@
       </div>
     </div>
 
-    <footer class="w-full mb-65 mt-66">
+    <!-- CAROUSEL -->
+    <!-- CAROUSEL -->
+    <!-- CAROUSEL -->
+    <!-- CAROUSEL -->
+
+    <section class="pt-16">
+      <div class="mx-auto py-5">
+        <div class="whitespace-nowrap overflow-hidden carousel scroll-fadeinup">
+          <div class="inline-flex space-x-6 slide-right mr-5 carousel-content">
+            <div
+              class="image-container relative w-80 h-50 rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="../Image/Kursus Figma - Coursera.png"
+                alt="Image 1"
+                class="w-full h-full object-cover"
+              />
+              <div class="overlay"></div>
+              <div
+                class="overlay-text absolute inset-0 flex items-center justify-center"
+              >
+                <div class="overlay-content">
+                  <div class="overlay-title">Figma</div>
+                  <div class="overlay-description">Coursera</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="image-container relative w-80 h-50 rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="../Image/Kursus C - Dicoding.png"
+                alt="Image 2"
+                class="w-full h-full object-cover"
+              />
+              <div class="overlay"></div>
+              <div
+                class="overlay-text absolute inset-0 flex items-center justify-center"
+              >
+                <div class="overlay-content">
+                  <div class="overlay-title">C Programming</div>
+                  <div class="overlay-description">Dicoding</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="image-container relative w-80 h-50 rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="../Image/Kursus Pyhton - DQLab.png"
+                alt="Image 3"
+                class="w-full h-full object-cover"
+              />
+              <div class="overlay"></div>
+              <div
+                class="overlay-text absolute inset-0 flex items-center justify-center"
+              >
+                <div class="overlay-content">
+                  <div class="overlay-title">Python</div>
+                  <div class="overlay-description">DQLab</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="image-container relative w-80 h-50 rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="../Image/Sertifikat Computer Science CS50.png"
+                alt="Image 4"
+                class="w-full h-full object-cover"
+              />
+              <div class="overlay"></div>
+              <div
+                class="overlay-text absolute inset-0 flex items-center justify-center"
+              >
+                <div class="overlay-content">
+                  <div class="overlay-title">Computer Science</div>
+                  <div class="overlay-description">CS50 Harvard</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline-flex space-x-6 slide-right carousel-content">
+            <div
+              class="image-container relative w-80 h-50 rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="../Image/Kursus Data Analysis - Coursera.png"
+                alt="Image 1"
+                class="w-full h-full object-cover"
+              />
+              <div class="overlay"></div>
+              <div
+                class="overlay-text absolute inset-0 flex items-center justify-center"
+              >
+                <div class="overlay-content">
+                  <div class="overlay-title">Data Analyist</div>
+                  <div class="overlay-description">Coursera</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="image-container relative w-80 h-50 rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="../Image/Kursus Git - Progate.png"
+                alt="Image 2"
+                class="w-full h-full object-cover"
+              />
+              <div class="overlay"></div>
+              <div
+                class="overlay-text absolute inset-0 flex items-center justify-center"
+              >
+                <div class="overlay-content">
+                  <div class="overlay-title">Git</div>
+                  <div class="overlay-description">Prograte</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="image-container relative w-80 h-50 rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="../Image/Kursus C - Skillvul.png"
+                alt="Image 3"
+                class="w-full h-full object-cover"
+              />
+              <div class="overlay"></div>
+              <div
+                class="overlay-text absolute inset-0 flex items-center justify-center"
+              >
+                <div class="overlay-content">
+                  <div class="overlay-title">C Programming</div>
+                  <div class="overlay-description">Skillvul</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="image-container relative w-80 h-50 rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="../Image/Sertifikat Computer Science CS50.png"
+                alt="Image 4"
+                class="w-full h-full object-cover"
+              />
+              <div class="overlay"></div>
+              <div
+                class="overlay-text absolute inset-0 flex items-center justify-center"
+              >
+                <div class="overlay-content">
+                  <div class="overlay-title">Computer Science</div>
+                  <div class="overlay-description">CS50 Harvard</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline-flex space-x-6 slide-left ml-5 carousel-content">
+            <div
+              class="image-container relative w-80 h-50 rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="../Image/Kursus Pyhton - DQLab.png"
+                alt="Image 1"
+                class="w-full h-full object-cover"
+              />
+              <div class="overlay"></div>
+              <div
+                class="overlay-text absolute inset-0 flex items-center justify-center"
+              >
+                <div class="overlay-content">
+                  <div class="overlay-title">Python</div>
+                  <div class="overlay-description">DQLab</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="image-container relative w-80 h-50 rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="../Image/Kursus Canva - Coursera.png"
+                alt="Image 2"
+                class="w-full h-full object-cover"
+              />
+              <div class="overlay"></div>
+              <div
+                class="overlay-text absolute inset-0 flex items-center justify-center"
+              >
+                <div class="overlay-content">
+                  <div class="overlay-title">Canva</div>
+                  <div class="overlay-description">Coursera</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="image-container relative w-80 h-50 rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="../Image/Sertifikat 1st Web Design.png"
+                alt="Image 3"
+                class="w-full h-full object-cover"
+              />
+              <div class="overlay"></div>
+              <div
+                class="overlay-text absolute inset-0 flex items-center justify-center"
+              >
+                <div class="overlay-content">
+                  <div class="overlay-title">Web Design</div>
+                  <div class="overlay-description">Icomfest</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="image-container relative w-80 h-50 rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="../Image/Kursus Git - Progate.png"
+                alt="Image 4"
+                class="w-full h-full object-cover"
+              />
+              <div class="overlay"></div>
+              <div
+                class="overlay-text absolute inset-0 flex items-center justify-center"
+              >
+                <div class="overlay-content">
+                  <div class="overlay-title">Git</div>
+                  <div class="overlay-description">Prograte</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAROUSEL -->
+    <!-- CAROUSEL -->
+    <!-- CAROUSEL -->
+    <!-- CAROUSEL -->
+
+    <section class="">
+      <div class="mx-auto mt-1">
+        <div
+          class="whitespace-nowrap overflow-hidden carousel flex flex-row-reverse scroll-fadeinup"
+        >
+          <div class="inline-flex space-x-6 slide-left ml-5 carousel-content">
+            <div
+              class="image-container relative w-80 h-50 rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="../Image/Kursus Pyhton - DQLab.png"
+                alt="Image 1"
+                class="w-full h-full object-cover"
+              />
+              <div class="overlay"></div>
+              <div
+                class="overlay-text absolute inset-0 flex items-center justify-center"
+              >
+                <div class="overlay-content">
+                  <div class="overlay-title">Python</div>
+                  <div class="overlay-description">DQLab</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="image-container relative w-80 h-50 rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="../Image/Kursus Canva - Coursera.png"
+                alt="Image 2"
+                class="w-full h-full object-cover"
+              />
+              <div class="overlay"></div>
+              <div
+                class="overlay-text absolute inset-0 flex items-center justify-center"
+              >
+                <div class="overlay-content">
+                  <div class="overlay-title">Canva</div>
+                  <div class="overlay-description">Coursera</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="image-container relative w-80 h-50 rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="../Image/Sertifikat 1st Web Design.png"
+                alt="Image 3"
+                class="w-full h-full object-cover"
+              />
+              <div class="overlay"></div>
+              <div
+                class="overlay-text absolute inset-0 flex items-center justify-center"
+              >
+                <div class="overlay-content">
+                  <div class="overlay-title">Web Design</div>
+                  <div class="overlay-description">Icomfest</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="image-container relative w-80 h-50 rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="../Image/Kursus Git - Progate.png"
+                alt="Image 4"
+                class="w-full h-full object-cover"
+              />
+              <div class="overlay"></div>
+              <div
+                class="overlay-text absolute inset-0 flex items-center justify-center"
+              >
+                <div class="overlay-content">
+                  <div class="overlay-title">Git</div>
+                  <div class="overlay-description">Prograte</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline-flex space-x-6 slide-left carousel-content">
+            <div
+              class="image-container relative w-80 h-50 rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="../Image/Sertifikat Computer Science CS50.png"
+                alt="Image 1"
+                class="w-full h-full object-cover"
+              />
+              <div class="overlay"></div>
+              <div
+                class="overlay-text absolute inset-0 flex items-center justify-center"
+              >
+                <div class="overlay-content">
+                  <div class="overlay-title">Computer Science</div>
+                  <div class="overlay-description">CS50 Harvard</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="image-container relative w-80 h-50 rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="../Image/Sertifikat 1st Web Design.png"
+                alt="Image 2"
+                class="w-full h-full object-cover"
+              />
+              <div class="overlay"></div>
+              <div
+                class="overlay-text absolute inset-0 flex items-center justify-center"
+              >
+                <div class="overlay-content">
+                  <div class="overlay-title">Web Design</div>
+                  <div class="overlay-description">Icomfest</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="image-container relative w-80 h-50 rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="../Image/Kursus C - Skillvul.png"
+                alt="Image 3"
+                class="w-full h-full object-cover"
+              />
+              <div class="overlay"></div>
+              <div
+                class="overlay-text absolute inset-0 flex items-center justify-center"
+              >
+                <div class="overlay-content">
+                  <div class="overlay-title">C Programming</div>
+                  <div class="overlay-description">Skillvul</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="image-container relative w-80 h-50 rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="../Image/Sertifikat Google IO Extended Bogor 2024 - Rafif Sava Adyvka Pratama.png"
+                alt="Image 4"
+                class="w-full h-full object-cover"
+              />
+              <div class="overlay"></div>
+              <div
+                class="overlay-text absolute inset-0 flex items-center justify-center"
+              >
+                <div class="overlay-content">
+                  <div class="overlay-title">Workshop</div>
+                  <div class="overlay-description">GDG</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline-flex space-x-6 slide-right mr-5 carousel-content">
+            <div
+              class="image-container relative w-80 h-50 rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="../Image/Kursus Figma - Coursera.png"
+                alt="Image 1"
+                class="w-full h-full object-cover"
+              />
+              <div class="overlay"></div>
+              <div
+                class="overlay-text absolute inset-0 flex items-center justify-center"
+              >
+                <div class="overlay-content">
+                  <div class="overlay-title">Figma</div>
+                  <div class="overlay-description">Coursera</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="image-container relative w-80 h-50 rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="../Image/Kursus C - Dicoding.png"
+                alt="Image 2"
+                class="w-full h-full object-cover"
+              />
+              <div class="overlay"></div>
+              <div
+                class="overlay-text absolute inset-0 flex items-center justify-center"
+              >
+                <div class="overlay-content">
+                  <div class="overlay-title">C Programming</div>
+                  <div class="overlay-description">Dicoding</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="image-container relative w-80 h-50 rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="../Image/Kursus Pyhton - DQLab.png"
+                alt="Image 3"
+                class="w-full h-full object-cover"
+              />
+              <div class="overlay"></div>
+              <div
+                class="overlay-text absolute inset-0 flex items-center justify-center"
+              >
+                <div class="overlay-content">
+                  <div class="overlay-title">Python</div>
+                  <div class="overlay-description">DQLab</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="image-container relative w-80 h-50 rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="../Image/Sertifikat Computer Science CS50.png"
+                alt="Image 4"
+                class="w-full h-full object-cover"
+              />
+              <div class="overlay"></div>
+              <div
+                class="overlay-text absolute inset-0 flex items-center justify-center"
+              >
+                <div class="overlay-content">
+                  <div class="overlay-title">Computer Science</div>
+                  <div class="overlay-description">CS50 Harvard</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+
+    <footer class="w-full mb-65 mt-70">
       <div class="w-full py-48 bg-[#334B35]">
         <div class="px-24 -mb-32">
           <div class="flex justify-between">
@@ -1154,8 +1695,8 @@
         </div>
       </div>
       <img
-        src="../Image/erasebg-transformed (2).png"
-        class="absolute left-1/2 -translate-x-1/2 -bottom-[4633px] w-64 z-20 scroll-fadeinup"
+        src="../Image/erasebg-transformed 3.png"
+        class="absolute left-1/2 -translate-x-1/2 -bottom-[5145px] w-75 z-20 scroll-fadeinup"
       />
       <div
         class="relative w-6/8 h-68 bg-white mx-auto rounded-2xl mt-[-540px] overflow-hidden border-[0.5px] border-[#334B35]"
@@ -1194,6 +1735,8 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/DrawSVGPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../logic/script.js"></script>
   </body>

@@ -10,6 +10,23 @@
   src: url('../Font/Poppins-Regular.ttf');
 }
 
+.noise {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    width: 200%;
+    z-index: -1;
+    height: 200vh;
+    background: transparent url('../Image/noise-transparent.png') repeat 0 0;
+    background-repeat: repeat;
+    animation: bg-noise-anim 0.2s infinite;
+    opacity: 0.9;
+    visibility: visible;
+    pointer-events: none;
+  }
+
 .animate-marquee {
   animation: marquee 60s linear infinite;
 }
@@ -47,6 +64,182 @@
   pointer-events: none;
   z-index: 0;
 }
+
+.hidden-before-animate {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+  }
+
+  .fadein {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+  }
+
+
+.text-draw__box {
+  width: 70%;
+  height: 2rem;
+  position: relative;
+  margin-top: -40px;
+  margin-left: 105px;
+  color: #FEAC1B;
+}
+
+.text-draw__box-svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: visible !important;
+}
+
+
+.card-list .card-item .card-link {
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+  width: 397px;
+  height: 430px;
+  display: block;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card-list .card-item .card-link:hover {
+  border-color: #5372F0;
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  padding: 30px 50px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card-overlay-backpacker {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  padding: 30px 50px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.2), transparent);
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card-overlay h2,
+.card-overlay p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.card-list .card-link .card-image {
+  width: 100%;
+  height: 430px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-wrapper{
+  overflow: hidden;
+  margin: 0 50px;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+  background: #F6EEE1;
+}
+
+.card-wrapper .swiper-slide-button-left,
+.card-wrapper .swiper-slide-button-right {
+  position: absolute;
+  color: green;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #F6EEE1;
+}
+
+.card-wrapper .swiper-slide-button-left {
+  margin-left: -5px;
+}
+
+.card-wrapper .swiper-slide-button-right {
+  margin-right: -5px;
+}
+
+.slide-right{
+  animation: slide-right 40s infinite linear;
+}
+
+.slide-left{
+  animation: slide-left 40s infinite linear;
+}
+
+.carousel:hover .carousel-content {
+  animation-play-state: paused;
+}
+
+.image-container:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.image-container:hover .overlay-text {
+  opacity: 1;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+}
+
+.overlay-text {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+img {
+  transition: transform 0.3s ease;
+}
+
+.overlay-content {
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.overlay-description {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
 
 #btnLinkedin:hover .circle-bg {
   width: 640px;
@@ -194,6 +387,10 @@
   opacity: 0;
 }
 
+.hidden-before-animate-1 {
+  opacity: 0;
+}
+
 .fadeinup{
   animation: fadeInUp 1.4s ease-in-out forwards;
 }
@@ -203,21 +400,21 @@
 }
 
 .fadeinleft-rafif{
-  animation: fadeInLeft 0.7s ease-in-out forwards;
-  animation-delay: 0.1s;
+  animation: fadeInLeft 1s ease-in-out forwards;
+  animation-delay: 0.2s;
 }
 .fadeinleft-sava{
-  animation: fadeInLeft 0.7s ease-in-out forwards;
-  animation-delay: 0.3s;
+  animation: fadeInLeft 1s ease-in-out forwards;
+  animation-delay: 0.5s;
 }
 .fadeinleft-adyvka{
-  animation: fadeInLeft 0.7s ease-in-out forwards;
-  animation-delay: 0.5s;
+  animation: fadeInLeft 1s ease-in-out forwards;
+  animation-delay: 0.9s;
 }
 
 .fadeinleftup{
   animation: fadeInLeftUp 0.7s ease-in-out forwards;
-  animation-delay: 0.3s;
+  animation-delay: 1.2s;
 }
 
 .fadeinright{
@@ -225,19 +422,20 @@
 }
 
 .fadeinright-project{
-  animation: fadeInRight 0.7s ease-in-out forwards;
+  animation: fadeInRight 0.8s ease-in-out forwards;
+  animation-delay: 1.3s;
 }
 .fadeinright-experience{
-  animation: fadeInRight 0.7s ease-in-out forwards;
-  animation-delay: 0.2s;
+  animation: fadeInRight 0.8s ease-in-out forwards;
+  animation-delay: 1.5s;
 }
 .fadeinright-achievement{
-  animation: fadeInRight 0.7s ease-in-out forwards;
-  animation-delay: 0.4s;
+  animation: fadeInRight 0.8s ease-in-out forwards;
+  animation-delay: 1.7s;
 }
 .fadeinright-contact{
-  animation: fadeInRight 0.7s ease-in-out forwards;
-  animation-delay: 0.6s;
+  animation: fadeInRight 0.8s ease-in-out forwards;
+  animation-delay: 1.9s;
 }
 
 .fadeindown{
@@ -314,6 +512,59 @@
   transition: 0.3s ease-in-out;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
+}
+
+@keyframes bg-noise-anim {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -5%);
+  }
+  20% {
+    transform: translate(-10%, 5%);
+  }
+  30% {
+    transform: translate(5%, -10%);
+  }
+  40% {
+    transform: translate(-5%, 15%);
+  }
+  50% {
+    transform: translate(-10%, 5%);
+  }
+  60% {
+    transform: translate(15%, 0);
+  }
+  70% {
+    transform: translate(0, 10%);
+  }
+  80% {
+    transform: translate(-15%, 0);
+  }
+  90% {
+    transform: translate(10%, 5%);
+  }
+  100% {
+    transform: translate(5%, 0);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 @keyframes marquee {
